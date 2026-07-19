@@ -13,14 +13,6 @@ Blackstone Browser, gereksiz özelliklerden uzak, performans odaklı ve kolay ku
 - 🔒 Güvenli WebView yapısı
 - 🎨 Karanlık tema uyumlu tasarım
 
-## 📷 Ekran Görüntüleri
-
-> Buraya uygulamanın ekran görüntülerini ekleyebilirsiniz.
-
-| Ana Sayfa | Tarayıcı |
-|-----------|----------|
-| ![](screenshots/home.png) | ![](screenshots/browser.png) |
-
 ## 🚀 Kurulum
 
 ### Android Studio
@@ -34,6 +26,11 @@ Android Studio ile projeyi açın ve çalıştırın.
 ### APK
 
 APK dosyası **Releases** bölümünden indirilebilir.
+## 📥 İndir
+
+En son sürümü buradan indirebilirsiniz:
+
+https://github.com/mazyLeyn/BlackstoneBrowser/releases/latest
 
 ## 🛠️ Kullanılan Teknolojiler
 
