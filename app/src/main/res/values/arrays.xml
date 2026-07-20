@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="theme_entries">
+        <item>Sistem</item>
+        <item>Açık</item>
+        <item>Koyu</item>
+    </string-array>
+    <string-array name="theme_values">
+        <item>system</item>
+        <item>light</item>
+        <item>dark</item>
+    </string-array>
+
+    <string-array name="search_engine_entries">
+        <item>Google</item>
+        <item>DuckDuckGo</item>
+        <item>Bing</item>
+        <item>Brave Search</item>
+    </string-array>
+    <string-array name="search_engine_values">
+        <item>google</item>
+        <item>duckduckgo</item>
+        <item>bing</item>
+        <item>brave</item>
+    </string-array>
+</resources>

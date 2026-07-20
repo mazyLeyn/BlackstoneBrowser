@@ -1,0 +1,14 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.MyBrowser" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/accent_blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/accent_blue_dark</item>
+        <item name="android:statusBarColor">#FFFFFF</item>
+        <item name="android:windowBackground">#FFFFFF</item>
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="colorOnSurface">#121212</item>
+        <item name="colorSurfaceVariant">#F5F5F5</item>
+        <item name="colorOutline">#E0E0E0</item>
+    </style>
+    <style name="Theme.MyBrowser" parent="Base.Theme.MyBrowser" />
+</resources>
