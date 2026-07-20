@@ -1,66 +1,73 @@
-# 🌑 Blackstone Browser
+# Blackstone Browser
 
-Modern, hızlı ve sade bir Android web tarayıcısı.
+Mozilla GeckoView tabanlı, sade ve performans odaklı bir Android web tarayıcısı.
 
-Blackstone Browser, gereksiz özelliklerden uzak, performans odaklı ve kolay kullanılabilen bir mobil tarayıcı olmayı hedefler.
+Blackstone Browser, gereksiz eklentilerden uzak durup temel tarayıcı deneyimini
+hızlı ve akıcı şekilde sunmayı hedefler. Chromium WebView yerine GeckoView (Firefox
+motoru) kullanır.
 
-## ✨ Özellikler
+## Özellikler
 
-- 🌐 Hızlı web gezinme
-- 🔍 Adres çubuğu ile URL ve arama desteği
-- 📱 Modern Material Design arayüzü
-- ⚡ Hafif ve akıcı performans
-- 🔒 Güvenli WebView yapısı
-- 🎨 Karanlık tema uyumlu tasarım
+- GeckoView (Firefox motoru) tabanlı hızlı sayfa render
+- Adres çubuğundan URL veya arama sorgusu girme, seçilebilir arama motoru (Google, DuckDuckGo, Brave, Bing)
+- Hızlı erişim (speed dial) ana ekranı
+- Gezinme geçmişi kaydı ve tek tuşla temizleme
+- Gizli sekme modu — geçmiş kaydedilmez, ayrı oturum
+- JavaScript açma/kapama, masaüstü modu, tema seçimi (açık/koyu/sistem)
+- Material Design arayüz, kenardan kenara (edge-to-edge) tasarım
 
-## 🚀 Kurulum
+## Kurulum
 
-### Android Studio
+### Android Studio ile
 
 ```bash
 git clone https://github.com/mazyLeyn/BlackstoneBrowser.git
 ```
 
-Android Studio ile projeyi açın ve çalıştırın.
+Projeyi Android Studio'da açın, Gradle sync tamamlandıktan sonra çalıştırın.
+Minimum SDK 26 (Android 8.0) gerektirir.
 
 ### APK
 
-APK dosyası **Releases** bölümünden indirilebilir.
-## 📥 İndir
+Derlenmiş APK dosyaları **Releases** bölümünden indirilebilir. Play Store veya
+Galaxy Store dışından kurulum yaptığınız için cihazınız "bilinmeyen kaynak" uyarısı
+gösterebilir — bu normaldir.
 
-En son sürümü buradan indirebilirsiniz:
+## İndir
 
-https://github.com/mazyLeyn/BlackstoneBrowser/releases/latest
+En son sürüm: https://github.com/mazyLeyn/BlackstoneBrowser/releases/latest
 
-## 🛠️ Kullanılan Teknolojiler
+## Kullanılan Teknolojiler
 
 - Kotlin
 - Android SDK
-- Android WebView
+- Mozilla GeckoView
 - Material Components
+- SQLite (gezinme geçmişi için)
 
-## 📋 Yol Haritası
+## Yol Haritası
 
+- [x] Gezinme geçmişi
+- [x] Gizli sekme modu
 - [ ] Yer imleri
-- [✓] Geçmiş
+- [ ] İzleyici/reklam engelleme (geliştirme aşamasında, henüz kararlı değil)
+- [ ] Çoklu sekme desteği
 - [ ] İndirme yöneticisi
-- [ ] Sekmeler
-- [ ] Gizli mod
-- [ ] Reklam engelleme
 
-## 🤝 Katkıda Bulunma
+## Bilinen Kısıtlar
 
-Katkılar, hata bildirimleri ve öneriler her zaman memnuniyetle karşılanır.
+Proje aktif geliştirme aşamasında. Yer imleri henüz işlevsel değil, izleyici
+engelleme özelliği test edilip stabilite sorunları nedeniyle geri alındı.
+
+## Katkıda Bulunma
+
+Katkılar, hata bildirimleri ve öneriler memnuniyetle karşılanır.
 
 1. Fork oluşturun.
 2. Yeni bir branch açın.
 3. Değişikliklerinizi yapın.
 4. Pull Request gönderin.
 
-## 📄 Lisans
+## Lisans
 
 Bu proje MIT Lisansı altında lisanslanmıştır.
-
----
-
-⭐ Projeyi beğendiyseniz yıldız vermeyi unutmayın!
