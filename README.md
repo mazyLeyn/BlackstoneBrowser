@@ -45,7 +45,7 @@ https://github.com/mazyLeyn/BlackstoneBrowser/releases/latest
 - [✓] Geçmiş
 - [ ] İndirme yöneticisi
 - [ ] Sekmeler
-- [ ] Gizli mod
+- [✓] Gizli mod
 - [ ] Reklam engelleme
 
 ## 🤝 Katkıda Bulunma
