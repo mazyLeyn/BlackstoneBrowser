@@ -42,7 +42,7 @@ https://github.com/mazyLeyn/BlackstoneBrowser/releases/latest
 ## 📋 Yol Haritası
 
 - [ ] Yer imleri
-- [ ] Geçmiş
+- [✓] Geçmiş
 - [ ] İndirme yöneticisi
 - [ ] Sekmeler
 - [ ] Gizli mod
