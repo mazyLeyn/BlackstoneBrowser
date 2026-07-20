@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Blackstone Browser</string>
+    <string name="brand_name_part1">Blackstone</string>
+    <string name="brand_name_part2">Browser</string>
+    <string name="beta_tag">Beta</string>
 </resources>

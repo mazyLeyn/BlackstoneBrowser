@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/group_main">
+        <item
+            android:id="@+id/menu_bookmarks"
+            android:icon="@drawable/ic_bookmarks"
+            android:title="Yer İmleri" />
+        <item
+            android:id="@+id/menu_history"
+            android:icon="@drawable/ic_history"
+            android:title="Geçmiş" />
+    </group>
+
+    <group android:id="@+id/group_settings">
+        <item
+            android:id="@+id/menu_theme"
+            android:icon="@drawable/ic_palette"
+            android:title="Tema" />
+        <item
+            android:id="@+id/menu_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="Ayarlar" />
+    </group>
+
+    <group android:id="@+id/group_info">
+        <item
+            android:id="@+id/menu_about"
+            android:icon="@drawable/ic_info"
+            android:title="Hakkında" />
+    </group>
+
+    <group android:id="@+id/group_exit">
+        <item
+            android:id="@+id/menu_clear_exit"
+            android:icon="@drawable/ic_refrech"
+            android:title="Temizle ve Çık" />
+    </group>
+</menu>
