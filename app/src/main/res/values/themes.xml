@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.MyBrowser" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/accent_blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/accent_blue_dark</item>
+        <item name="android:statusBarColor">@color/app_background</item>
+        <item name="android:windowBackground">@color/app_background</item>
+        <item name="colorSurface">@color/app_background</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorSurfaceVariant">@color/surface_color</item>
+        <item name="colorOutline">@color/icon_gray</item>
+        <item name="popupMenuStyle">@style/Widget.MyBrowser.PopupMenu</item>
+
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="Widget.MyBrowser.PopupMenu" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:popupBackground">@drawable/menu_background_light</item>
+    </style>
+
+    <style name="PopupMenuOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColorPrimary">#121212</item>
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="colorOnSurface">#121212</item>
+    </style>
+    <style name="Theme.MyBrowser" parent="Base.Theme.MyBrowser" />
+</resources>

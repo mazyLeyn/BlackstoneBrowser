@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Blackstone Browser Premium Palette (Shared) -->
+    <color name="accent_blue">#3B82F6</color>
+    <color name="accent_blue_dark">#2563EB</color>
+
+    <!-- Light Mode Palette -->
+    <color name="app_background">#FFFFFF</color>
+    <color name="surface_color">#F5F5F5</color>
+    <color name="text_primary">#121212</color>
+    <color name="text_secondary">#757575</color>
+    <color name="icon_gray">#757575</color>
+
+    <!-- Private Mode Palette (Constant) -->
+    <color name="private_mode_bg">#1A121F</color>
+    <color name="private_mode_surface">#241B2E</color>
+    <color name="private_mode_accent">#A78BFA</color>
+
+    <!-- Legacy / Compatibility -->
+    <color name="background_dark">#121212</color>
+    <color name="surface_dark">#1E1E1E</color>
+    <color name="accent_yellow">#FFD600</color>
+    <color name="accent_yellow_dark">#C6A700</color>
+</resources>
