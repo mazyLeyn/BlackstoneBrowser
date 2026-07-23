@@ -36,7 +36,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Blackstone Browser"
+                    android:text="@string/app_name"
                     android:textColor="@color/accent_blue"
                     android:textSize="32sp"
                     android:textStyle="bold" />

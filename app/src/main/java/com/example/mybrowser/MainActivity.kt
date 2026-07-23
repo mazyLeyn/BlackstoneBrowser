@@ -111,6 +111,10 @@ class MainActivity : AppCompatActivity() {
         homeSearchBar = findViewById(R.id.homeSearchBar)
         toolbarSearchBar = findViewById(R.id.toolbarSearchBar)
         bottomNavigation = findViewById(R.id.bottomNavigation)
+        
+        // Material 3 seçili öğe vurgusunu (oval arkaplan) kaldır
+        bottomNavigation.isItemActiveIndicatorEnabled = false
+        
         btnMenu = findViewById(R.id.btnMenu)
         btnPrivateMode = findViewById(R.id.btnPrivateMode)
         privateModeIndicator = findViewById(R.id.privateModeIndicator)
@@ -287,6 +291,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun applyPrivateModeUI() {
+        val isNightMode = (resources.configuration.uiMode and android.content.res.Configuration.UI_MODE_NIGHT_MASK) == android.content.res.Configuration.UI_MODE_NIGHT_YES
+
         val accentColor = if (isPrivateMode) {
             androidx.core.content.ContextCompat.getColor(this, R.color.private_mode_accent)
         } else {
@@ -305,20 +311,23 @@ class MainActivity : AppCompatActivity() {
             androidx.core.content.ContextCompat.getColor(this, R.color.surface_color)
         }
 
-        // Status Bar İkon Rengi Yönetimi
+        val iconGrayColor = androidx.core.content.ContextCompat.getColor(this, R.color.icon_gray)
+
+        // Status Bar ve Nav Bar İkon Rengi Yönetimi
         val windowInsetsController = WindowCompat.getInsetsController(window, window.decorView)
         if (isPrivateMode) {
             windowInsetsController.isAppearanceLightStatusBars = false
+            windowInsetsController.isAppearanceLightNavigationBars = false
         } else {
-            val isNightMode = (resources.configuration.uiMode and android.content.res.Configuration.UI_MODE_NIGHT_MASK) == android.content.res.Configuration.UI_MODE_NIGHT_YES
             windowInsetsController.isAppearanceLightStatusBars = !isNightMode
+            windowInsetsController.isAppearanceLightNavigationBars = !isNightMode
         }
 
         // Renkleri Belirle
         val finalIconColor = if (isPrivateMode) {
             androidx.core.content.ContextCompat.getColor(this, R.color.white)
         } else {
-            androidx.core.content.ContextCompat.getColor(this, R.color.icon_gray)
+            iconGrayColor
         }
         
         val finalTextColor = if (isPrivateMode) {
@@ -329,7 +338,6 @@ class MainActivity : AppCompatActivity() {
 
         // Arka Planları Uygula
         appBarLayout.setBackgroundColor(bgColor)
-        bottomNavigation.setBackgroundColor(bgColor)
         homepageContainer.setBackgroundColor(bgColor)
         
         // Arama çubuğu arka planlarını optimize et
@@ -340,8 +348,10 @@ class MainActivity : AppCompatActivity() {
         glowView.setBackgroundResource(if (isPrivateMode) R.drawable.bg_glow_purple else R.drawable.bg_glow_yellow)
 
         // Bottom Navigation renklerini ayarla
-        bottomNavigation.itemIconTintList = android.content.res.ColorStateList.valueOf(accentColor)
-        bottomNavigation.itemTextColor = android.content.res.ColorStateList.valueOf(accentColor)
+        val navTextColorStateList = android.content.res.ColorStateList.valueOf(accentColor)
+        bottomNavigation.itemIconTintList = navTextColorStateList
+        bottomNavigation.itemTextColor = navTextColorStateList
+        bottomNavigation.setBackgroundColor(bgColor)
 
         // İkon ve Metin Renklerini Uygula
         val colorStateList = android.content.res.ColorStateList.valueOf(finalIconColor)

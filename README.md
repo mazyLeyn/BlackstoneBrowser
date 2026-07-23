@@ -1,8 +1,8 @@
-# Blackstone Browser
+# Warden Browser
 
 Mozilla GeckoView tabanlı, sade ve performans odaklı bir Android web tarayıcısı.
 
-Blackstone Browser, gereksiz eklentilerden uzak durup temel tarayıcı deneyimini
+Warden Browser, gereksiz eklentilerden uzak durup temel tarayıcı deneyimini
 hızlı ve akıcı şekilde sunmayı hedefler. Chromium WebView yerine GeckoView (Firefox
 motoru) kullanır.
 
@@ -21,7 +21,7 @@ motoru) kullanır.
 ### Android Studio ile
 
 ```bash
-git clone https://github.com/mazyLeyn/BlackstoneBrowser.git
+git clone https://github.com/mazyLeyn/WardenBrowser.git
 ```
 
 Projeyi Android Studio'da açın, Gradle sync tamamlandıktan sonra çalıştırın.
@@ -35,7 +35,7 @@ gösterebilir — bu normaldir.
 
 ## İndir
 
-En son sürüm: https://github.com/mazyLeyn/BlackstoneBrowser/releases/latest
+En son sürüm: https://github.com/mazyLeyn/WardenBrowser/releases/latest
 
 ## Kullanılan Teknolojiler
 

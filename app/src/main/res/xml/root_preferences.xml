@@ -44,8 +44,7 @@
     <PreferenceCategory app:title="Hakkında">
         <Preference
             app:key="version"
-            app:title="Uygulama Sürümü"
-            app:summary="v1.3.6" />
+            app:title="Uygulama Sürümü" />
         <Preference
             app:key="licenses"
             app:title="Lisans Bilgisi" />

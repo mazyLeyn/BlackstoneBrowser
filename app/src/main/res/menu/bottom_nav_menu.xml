@@ -3,21 +3,26 @@
     <item
         android:id="@+id/nav_back"
         android:icon="@drawable/ic_back"
+        android:checkable="false"
         android:title="Back" />
     <item
         android:id="@+id/nav_forward"
         android:icon="@drawable/ic_forward"
+        android:checkable="false"
         android:title="Forward" />
     <item
         android:id="@+id/nav_home"
         android:icon="@drawable/ic_home"
+        android:checkable="false"
         android:title="Home" />
     <item
         android:id="@+id/nav_refresh"
         android:icon="@drawable/ic_refresh"
+        android:checkable="false"
         android:title="Refresh" />
     <item
         android:id="@+id/nav_menu"
         android:icon="@drawable/ic_menu"
+        android:checkable="false"
         android:title="Menü" />
 </menu>

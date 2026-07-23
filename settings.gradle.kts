@@ -17,5 +17,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "BlackstoneBrowser"
+rootProject.name = "WardenBrowser"
 include(":app")

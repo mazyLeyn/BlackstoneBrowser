@@ -27,12 +27,12 @@ class AboutActivity : AppCompatActivity() {
             insets
         }
         
-        findViewById<TextView>(R.id.versionText).text = "v1.3.6"
+        findViewById<TextView>(R.id.versionText).text = "v${BuildConfig.VERSION_NAME}"
         
         val detailsText = StringBuilder()
             .append("Powered by Mozilla GeckoView\n\n")
             .append("Developer: Onur Karatas\n")
-            .append("GitHub: https://github.com/mazyLeyn/BlackstoneBrowser\n\n")
+            .append("GitHub: https://github.com/mazyLeyn/WardenBrowser\n\n")
             .append("Android Version: ${Build.VERSION.RELEASE} (API ${Build.VERSION.SDK_INT})\n")
             .append("Build Number: ${BuildConfig.VERSION_CODE}")
             .toString()

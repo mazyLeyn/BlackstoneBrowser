@@ -14,8 +14,8 @@ android {
         applicationId = "com.example.mybrowser"
         minSdk = 26
         targetSdk = 36
-        versionCode = 7
-        versionName = "1.3.6"
+        versionCode = 10
+        versionName = "1.3.9"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -26,9 +26,12 @@ android {
 
     buildTypes {
         release {
-            optimization {
-                enable = false
-            }
+            isMinifyEnabled = true
+            isShrinkResources = true
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
         }
     }
     compileOptions {

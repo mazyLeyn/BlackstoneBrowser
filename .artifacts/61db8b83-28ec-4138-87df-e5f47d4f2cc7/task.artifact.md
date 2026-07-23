@@ -1,0 +1,8 @@
+- [x] Update `strings.xml` with "Warden Browser"
+- [x] Update `activity_about.xml` layout
+- [x] Update `colors.xml` comments
+- [x] Update `settings.gradle.kts` project name
+- [x] Update `README.md` documentation
+- [x] Update `AboutActivity.kt` GitHub links
+- [x] Verify build
+- [x] Create walkthrough artifact
